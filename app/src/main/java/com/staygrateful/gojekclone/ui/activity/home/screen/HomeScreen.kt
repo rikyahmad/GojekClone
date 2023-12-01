@@ -31,7 +31,6 @@ fun HomeScreen() {
     Surface(
         modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background
     ) {
-        val scrollState = rememberScrollState()
         val spanCount = 4
         Box(Modifier.background(color = Color.White)) {
             Column {

@@ -50,7 +50,7 @@ fun HomeMenuSearch() {
             modifier = Modifier
                 .weight(1f)
                 .height(44.dp)
-                .rounded(color = Color.White, corner = 20.dp)
+                .rounded(color = Color.White, corner = 20.dp, clip = true)
                 .padding(end = 15.dp, start = 0.dp),
             value = input,
             maxLines = 1,

@@ -79,13 +79,6 @@ fun BottomNavItemBar(
     unselectedTextColor: Color = ColorText,
 ) {
 
-    /*val scale = animateFloatAsState(
-        targetValue = if (isSelected) 1.1f else 1f,
-        animationSpec = tween(500, easing = {
-            CustomBounceInterpolator(amplitude = 1.0, frequency = 5.0).getInterpolation(it)
-        })
-    )*/
-
     var scale by rememberSaveable { mutableStateOf(1f) }
     val textSize = if (isSelected) 12.sp else 12.sp
     val iconColor = if (isSelected) selectedIconColor else unselectedIconColor
